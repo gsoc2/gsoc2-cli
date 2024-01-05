@@ -1,0 +1,15 @@
+# ignore everything
+/*
+
+# unignore desired files
+!package.json
+!README.md
+!LICENSE
+!bin
+!js
+!scripts/install.js
+!checksums.txt
+
+# ignore JS tests
+__mocks__
+__tests__

@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli releases finalize -hyphenated-release
+? success
+Finalized release -hyphenated-release
+
+```

@@ -1,0 +1,7 @@
+```
+$ __GSOC2_RN_WRAP_XCODE_CALL=1 GSOC2_RN_REAL_NODE_BINARY=tests/integration/_fixtures/binary.sh GSOC2_RN_SOURCEMAP_REPORT=rn-sourcemap-report-compose-source-maps-custom.json COMPOSE_SOURCEMAP_PATH=custom/path/to/compose/script.js gsoc2-cli custom/path/to/compose/script.js package.map hermes.map -o source.map.path
+? success
+Binary executed with args: custom/path/to/compose/script.js package.map hermes.map -o source.map.path
+No packager source map found in source map report, skipping copy of debug id to Hermes combined source map.
+
+```

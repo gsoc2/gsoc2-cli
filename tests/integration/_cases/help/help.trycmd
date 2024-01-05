@@ -1,0 +1,49 @@
+```
+$ gsoc2-cli help
+? success
+Command line utility for Gsoc2.
+
+This tool helps you manage remote resources on a Gsoc2 server like
+sourcemaps, debug symbols or releases.  Use `--help` on the subcommands
+to learn more about them.
+
+Usage: gsoc2-cli[EXE] [OPTIONS] <COMMAND>
+
+Commands:
+  completions      Generate completions for the specified shell.
+  debug-files      Locate, analyze or upload debug information files. [aliases: dif]
+  deploys          Manage deployments for Gsoc2 releases.
+  events           Manage events on Gsoc2.
+  files            Manage release artifacts.
+  info             Print information about the configuration and verify authentication.
+  issues           Manage issues in Gsoc2.
+  login            Authenticate with the Gsoc2 server.
+  monitors         Manage monitors on Gsoc2 [beta].
+  organizations    Manage organizations on Gsoc2.
+  projects         Manage projects on Gsoc2.
+  react-native     Upload build artifacts for react-native projects.
+  releases         Manage releases on Gsoc2.
+  repos            Manage repositories on Gsoc2.
+  send-event       Send a manual event to Gsoc2.
+  send-envelope    Send a stored envelope to Gsoc2.
+  sourcemaps       Manage sourcemaps for Gsoc2 releases.
+  uninstall        Uninstall the gsoc2-cli executable.
+  upload-proguard  Upload ProGuard mapping files to a project.
+  help             Print this message or the help of the given subcommand(s)
+
+Options:
+      --url <URL>                Fully qualified URL to the Gsoc2 server.
+                                 [default: https://gsoc2.io/]
+      --header <KEY:VALUE>       Custom headers that should be attached to all requests
+                                 in key:value format.
+      --auth-token <AUTH_TOKEN>  Use the given Gsoc2 auth token.
+      --api-key <API_KEY>        Use the given Gsoc2 API key.
+      --log-level <LOG_LEVEL>    Set the log output verbosity. [possible values: trace, debug, info,
+                                 warn, error]
+      --quiet                    Do not print any output while preserving correct exit code. This
+                                 flag is currently implemented only for selected subcommands.
+                                 [aliases: silent]
+  -h, --help                     Print help
+  -V, --version                  Print version
+
+```

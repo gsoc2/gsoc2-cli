@@ -1,0 +1,5 @@
+```
+$ gsoc2-cli releases info wat-release --silent
+? success
+
+```

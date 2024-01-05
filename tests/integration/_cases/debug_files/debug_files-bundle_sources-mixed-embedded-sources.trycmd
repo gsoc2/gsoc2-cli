@@ -1,0 +1,15 @@
+```
+$ gsoc2-cli --log-level=debug debug-files bundle-sources tests/integration/_fixtures/SrcGenSampleApp.pdb
+? success
+  INFO    [..] Loaded config from [CWD]/.gsoc2clirc
+  DEBUG   [..] gsoc2-cli version: [VERSION], platform: [..], architecture: [..]
+  INFO    [..] gsoc2-cli was invoked with the following command line: "[CWD]/target/debug/gsoc2-cli[EXE]" "--log-level=debug" "debug-files" "bundle-sources" "tests/integration/_fixtures/SrcGenSampleApp.pdb"
+  DEBUG   [..] Trying to add source file: /Users/matt/Code/temp/SrcGenSampleApp/SrcGenSampleApp/Program.cs
+  DEBUG   [..] Trying to add source file: /Users/matt/Code/temp/SrcGenSampleApp/SrcGenSampleApp/obj/Release/net6.0/SrcGenSampleApp.GlobalUsings.g.cs
+  DEBUG   [..] Trying to add source file: /Users/matt/Code/temp/SrcGenSampleApp/SrcGenSampleApp/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+  DEBUG   [..] Trying to add source file: /Users/matt/Code/temp/SrcGenSampleApp/SrcGenSampleApp/obj/Release/net6.0/SrcGenSampleApp.AssemblyInfo.cs
+  DEBUG   [..] Skipping embedded source file: /Users/matt/Code/temp/SrcGenSampleApp/SrcGenSampleApp/MySourceGenerator/MySourceGenerator.HelloSourceGenerator/Program.g.cs
+skipped tests/integration/_fixtures/SrcGenSampleApp.pdb (no files found)
+  DEBUG   [..] skipping update nagger because session is not attended
+
+```

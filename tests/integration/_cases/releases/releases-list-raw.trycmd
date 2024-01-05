@@ -1,0 +1,7 @@
+```
+$ gsoc2-cli releases list --raw
+? success
+gsoc2@test
+gsoc2@dev
+
+```

@@ -1,0 +1,14 @@
+```
+$ gsoc2-cli organizations list
+? success
++--------+-------------+-------------+--------------+---------------+--------------+
+| ID     | Name        | Slug        | Date Created | Early Adopter | Requires 2FA |
++--------+-------------+-------------+--------------+---------------+--------------+
+| 142405 | Commoner    | commoner    | 2018-04-03   | false         | false        |
+| 333688 | kamil-test  | kamil-test  | 2019-12-18   | false         | false        |
+| 19635  | Santry      | gsoc2-test | 2015-03-02   | true          | false        |
+| 1      | Gsoc2      | gsoc2      | 2014-12-15   | true          | false        |
+| 447951 | Gsoc2 SDKs | gsoc2-sdks | 2020-09-14   | true          | false        |
++--------+-------------+-------------+--------------+---------------+--------------+
+
+```

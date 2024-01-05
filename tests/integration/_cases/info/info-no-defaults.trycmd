@@ -1,0 +1,13 @@
+```
+$ gsoc2-cli info --no-defaults
+? success
+Gsoc2 Server: [SERVER]
+
+Authentication Info:
+  Method: Auth Token
+  User: kamil@gsoc2.io
+  Scopes:
+    - project:read
+    - project:releases
+
+```

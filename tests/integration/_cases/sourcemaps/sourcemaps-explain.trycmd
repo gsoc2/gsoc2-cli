@@ -1,0 +1,11 @@
+```
+$ gsoc2-cli sourcemaps explain
+? failed
+error: the following required arguments were not provided:
+  <EVENT_ID>
+
+Usage: gsoc2-cli[EXE] sourcemaps explain <EVENT_ID>
+
+For more information, try '--help'.
+
+```

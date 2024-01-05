@@ -1,0 +1,7 @@
+```
+$ gsoc2-cli update
+? success
+Latest release is [..]
+Running in integration tests mode. Skipping execution.
+
+```

@@ -1,0 +1,12 @@
+```
+$ gsoc2-cli releases list --show-projects
+? success
++--------------+-------------+----------+------------+------------+
+| Released     | Version     | Projects | New Events | Last Event |
++--------------+-------------+----------+------------+------------+
+| (unreleased) | gsoc2@test | test-1   | 1337       | -          |
+|              |             | test-2   |            |            |
+| (unreleased) | gsoc2@dev  | test     | 42         | -          |
++--------------+-------------+----------+------------+------------+
+
+```

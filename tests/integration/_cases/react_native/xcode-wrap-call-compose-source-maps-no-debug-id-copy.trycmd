@@ -1,0 +1,6 @@
+```
+$ __GSOC2_RN_WRAP_XCODE_CALL=1 GSOC2_RN_REAL_NODE_BINARY=tests/integration/_fixtures/binary.sh GSOC2_RN_SOURCEMAP_REPORT=rn-sourcemap-report-compose-source-maps-no-debug-id-copy.json GSOC2_RN_NO_DEBUG_ID=1 gsoc2-cli path/to/compose-source-maps.js package.map hermes.map -o source.map.path
+? success
+Binary executed with args: path/to/compose-source-maps.js package.map hermes.map -o source.map.path
+
+```

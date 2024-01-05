@@ -1,0 +1,11 @@
+```
+$ gsoc2-cli info
+? failed
+Gsoc2 Server: https://gsoc2.io
+Default Organization: -
+Default Project: -
+
+Authentication Info:
+  Method: Unauthorized
+
+```

@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli releases new -hyphenated-release
+? success
+Created release -hyphenated-release
+
+```

@@ -1,0 +1,89 @@
+```
+$ gsoc2-cli send-event --help
+? success
+Send a manual event to Gsoc2.
+
+This command will validate input parameters and attempt to send an event to Gsoc2. Due to network
+errors, rate limits or sampling the event is not guaranteed to actually arrive. Check debug output
+for transmission errors by passing --log-level=debug or setting `GSOC2_LOG_LEVEL=debug`.
+
+Usage: gsoc2-cli[EXE] send-event [OPTIONS] [PATH]
+
+Arguments:
+  [PATH]
+          The path or glob to the file(s) in JSON format to send as event(s). When provided, all
+          other arguments are ignored.
+
+Options:
+      --raw
+          Send events using an envelope without attempting to parse their contents.
+
+      --header <KEY:VALUE>
+          Custom headers that should be attached to all requests
+          in key:value format.
+
+  -l, --level <LEVEL>
+          Optional event severity/log level. (debug|info|warning|error|fatal) [defaults to 'error']
+
+      --auth-token <AUTH_TOKEN>
+          Use the given Gsoc2 auth token.
+
+      --timestamp <TIMESTAMP>
+          Optional event timestamp in one of supported formats: unix timestamp, RFC2822 or RFC3339.
+
+  -r, --release <RELEASE>
+          Optional identifier of the release.
+
+  -d, --dist <DISTRIBUTION>
+          Set the distribution.
+
+      --log-level <LOG_LEVEL>
+          Set the log output verbosity.
+          
+          [possible values: trace, debug, info, warn, error]
+
+  -E, --env <ENVIRONMENT>
+          Send with a specific environment.
+
+      --quiet
+          Do not print any output while preserving correct exit code. This flag is currently
+          implemented only for selected subcommands.
+          
+          [aliases: silent]
+
+      --no-environ
+          Do not send environment variables along
+
+  -m, --message <MESSAGE>
+          The event message.
+
+  -a, --message-arg <MESSAGE_ARG>
+          Arguments for the event message.
+
+  -p, --platform <PLATFORM>
+          Override the default 'other' platform specifier.
+
+  -t, --tag <KEY:VALUE>
+          Add a tag (key:value) to the event.
+
+  -e, --extra <KEY:VALUE>
+          Add extra information (key:value) to the event.
+
+  -u, --user <KEY:VALUE>
+          Add user information (key:value) to the event. [eg: id:42, username:foo]
+
+  -f, --fingerprint <FINGERPRINT>
+          Change the fingerprint of the event.
+
+      --logfile <PATH>
+          Send a logfile as breadcrumbs with the event (last 100 records)
+
+      --with-categories
+          When logfile is provided, this flag will try to assign correct level to extracted log
+          breadcrumbs. It uses standard log format of "category: message". eg. "INFO: Something
+          broke" will be parsed as a breadcrumb "{"level": "info", "message": "Something broke"}"
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+```

@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli monitors run -e dev-env foo-monitor -- echo 123
+? success
+123
+
+```

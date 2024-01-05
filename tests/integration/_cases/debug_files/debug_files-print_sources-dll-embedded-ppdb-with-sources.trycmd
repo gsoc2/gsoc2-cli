@@ -1,0 +1,17 @@
+```
+$ gsoc2-cli debug-files print-sources tests/integration/_fixtures/Gsoc2.Samples.Console.Basic-embedded-ppdb-with-sources.dll
+? success
+pe 623535c7-c0ea-4dee-b99b-4669e99a7ecc-a878d1fa has no sources.
+portablepdb 623535c7-c0ea-4dee-b99b-4669e99a7ecc-a878d1fa references sources:
+  C:/dev/gsoc2-dotnet/samples/Gsoc2.Samples.Console.Basic/Program.cs
+    Embedded: 204 bytes
+  C:/dev/gsoc2-dotnet/samples/Gsoc2.Samples.Console.Basic/obj/Release/net6.0/Gsoc2.Samples.Console.Basic.GlobalUsings.g.cs
+    Embedded: 295 bytes
+  C:/dev/gsoc2-dotnet/samples/Gsoc2.Samples.Console.Basic/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+    Embedded: 198 bytes
+  C:/dev/gsoc2-dotnet/samples/Gsoc2.Samples.Console.Basic/obj/Release/net6.0/Gsoc2.Attributes.cs
+    Embedded: 610 bytes
+  C:/dev/gsoc2-dotnet/samples/Gsoc2.Samples.Console.Basic/obj/Release/net6.0/Gsoc2.Samples.Console.Basic.AssemblyInfo.cs
+    Embedded: 1019 bytes
+
+```

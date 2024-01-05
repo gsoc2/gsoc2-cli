@@ -1,0 +1,20 @@
+{
+  "name": "@gsoc2/cli-linux-x64",
+  "version": "2.23.2",
+  "description": "The linux x64 distribution of the Gsoc2 CLI binary.",
+  "repository": "https://github.com/gsoc2/gsoc2-cli",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "os": [
+    "linux",
+    "freebsd"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}

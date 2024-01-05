@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli releases new wat-release --finalize
+? success
+Created release wat-release
+
+```

@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli releases new -p wat-project new-release
+? success
+Created release new-release
+
+```

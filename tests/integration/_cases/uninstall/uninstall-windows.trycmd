@@ -1,0 +1,8 @@
+```
+$ gsoc2-cli uninstall
+? failed
+Cannot uninstall on Windows :(
+
+Delete this file yourself: [CWD]/target/debug/gsoc2-cli[EXE]
+
+```

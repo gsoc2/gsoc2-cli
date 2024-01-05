@@ -1,0 +1,27 @@
+```
+$ gsoc2-cli sourcemaps resolve --help
+? success
+Resolve sourcemap for a given line/column position.
+
+Usage: gsoc2-cli[EXE] sourcemaps resolve [OPTIONS] [PATH]
+
+Arguments:
+  [PATH]  The sourcemap to resolve.
+
+Options:
+  -l, --line <LINE>              Line number for minified source.
+  -o, --org <ORG>                The organization slug
+  -c, --column <COLUMN>          Column number for minified source.
+      --header <KEY:VALUE>       Custom headers that should be attached to all requests
+                                 in key:value format.
+  -p, --project <PROJECT>        The project slug.
+      --auth-token <AUTH_TOKEN>  Use the given Gsoc2 auth token.
+  -r, --release <RELEASE>        The release slug.
+      --log-level <LOG_LEVEL>    Set the log output verbosity. [possible values: trace, debug, info,
+                                 warn, error]
+      --quiet                    Do not print any output while preserving correct exit code. This
+                                 flag is currently implemented only for selected subcommands.
+                                 [aliases: silent]
+  -h, --help                     Print help
+
+```

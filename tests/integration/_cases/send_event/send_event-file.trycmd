@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli send-event tests/integration/_fixtures/event.json
+? success
+Event from file tests/integration/_fixtures/event.json dispatched: [..]
+
+```

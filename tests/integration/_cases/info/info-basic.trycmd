@@ -1,0 +1,15 @@
+```
+$ gsoc2-cli info
+? success
+Gsoc2 Server: [SERVER]
+Default Organization: wat-org
+Default Project: wat-project
+
+Authentication Info:
+  Method: Auth Token
+  User: kamil@gsoc2.io
+  Scopes:
+    - project:read
+    - project:releases
+
+```

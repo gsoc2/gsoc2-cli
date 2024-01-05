@@ -1,0 +1,104 @@
+minVersion: 0.23.1
+changelogPolicy: auto
+targets:
+  - name: gcs
+    bucket: gsoc2-sdk-assets
+    includeNames: /^gsoc2-cli-(Darwin|Windows|Linux).*$/i
+    paths:
+      - path: /gsoc2-cli/{{version}}/
+        metadata:
+          cacheControl: public, max-age=2592000
+      - path: /gsoc2-cli/latest/
+        metadata:
+          cacheControl: public, max-age=600
+
+  # Binary distributions on npm
+  - name: npm
+    id: '@gsoc2/cli-darwin'
+    includeNames: /^gsoc2-cli-darwin-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-linux-arm'
+    includeNames: /^gsoc2-cli-linux-arm-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-linux-arm64'
+    includeNames: /^gsoc2-cli-linux-arm64-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-linux-i686'
+    includeNames: /^gsoc2-cli-linux-i686-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-linux-x64'
+    includeNames: /^gsoc2-cli-linux-x64-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-win32-i686'
+    includeNames: /^gsoc2-cli-win32-i686-\d.*\.tgz$/
+  - name: npm
+    id: '@gsoc2/cli-win32-x64'
+    includeNames: /^gsoc2-cli-win32-x64-\d.*\.tgz$/
+
+  # Main Gsoc2 CLI package
+  - name: npm
+    id: '@gsoc2/cli'
+    includeNames: /^gsoc2-cli-\d.*\.tgz$/
+
+  - name: brew
+    tap: gsoc2/tools
+    template: >
+      class Gsoc2Cli < Formula
+        desc "Gsoc2 command-line client for some generic tasks"
+        homepage "https://github.com/gsoc2/gsoc2-cli"
+        version "{{version}}"
+        license "BSD-3-Clause"
+        if OS.mac?
+          url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Darwin-universal"
+          sha256 "{{checksums.gsoc2-cli-Darwin-universal}}"
+        elsif OS.linux?
+          if Hardware::CPU.arm?
+            if Hardware::CPU.is_64_bit?
+              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-aarch64"
+              sha256 "{{checksums.gsoc2-cli-Linux-aarch64}}"
+            else
+              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-armv7"
+              sha256 "{{checksums.gsoc2-cli-Linux-armv7}}"
+            end
+          elseif Hardware::CPU.intel?
+            if Hardware::CPU.is_64_bit?
+              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-x86_64"
+              sha256 "{{checksums.gsoc2-cli-Linux-x86_64}}"
+            else
+              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-i686"
+              sha256 "{{checksums.gsoc2-cli-Linux-i686}}"
+            end
+          else
+            raise "Unsupported architecture"
+          end
+        else
+            raise "Unsupported operating system"
+        end
+        def install
+          bin.install Dir["gsoc2-cli-*"].first => "gsoc2-cli"
+        end
+        test do
+          assert_match version.to_s, shell_output("#{bin}/gsoc2-cli --version").chomp
+        end
+      end
+  - name: github
+    includeNames: /^gsoc2-cli-(Darwin|Windows|Linux).*$/i
+  - name: registry
+    apps:
+      app:gsoc2-cli:
+        urlTemplate: https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/{{file}}
+        includeNames: /^gsoc2-cli-(Darwin|Windows|Linux).*$/i
+        checksums:
+          - algorithm: sha256
+            format: hex
+requireNames:
+  - /^gsoc2-cli-Darwin-x86_64$/
+  - /^gsoc2-cli-Darwin-arm64$/
+  - /^gsoc2-cli-Darwin-universal$/
+  - /^gsoc2-cli-Linux-i686$/
+  - /^gsoc2-cli-Linux-x86_64$/
+  - /^gsoc2-cli-Linux-armv7$/
+  - /^gsoc2-cli-Linux-aarch64$/
+  - /^gsoc2-cli-Windows-i686.exe$/
+  - /^gsoc2-cli-Windows-x86_64.exe$/
+  - /^gsoc2_cli-.*.tar.gz$/

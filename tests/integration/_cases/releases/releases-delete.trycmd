@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli releases delete wat-release
+? success
+Deleted release wat-release!
+
+```

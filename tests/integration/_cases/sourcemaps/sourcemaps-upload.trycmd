@@ -1,0 +1,11 @@
+```
+$ gsoc2-cli sourcemaps upload
+? failed
+error: the following required arguments were not provided:
+  <PATHS>...
+
+Usage: gsoc2-cli[EXE] sourcemaps upload <PATHS>...
+
+For more information, try '--help'.
+
+```

@@ -1,0 +1,41 @@
+```
+$ gsoc2-cli send-envelope --help
+? success
+Send a stored envelope to Gsoc2.
+
+This command will validate and attempt to send an envelope to Gsoc2. Due to network errors, rate
+limits or sampling the envelope is not guaranteed to actually arrive. Check debug output for
+transmission errors by passing --log-level=debug or setting `GSOC2_LOG_LEVEL=debug`.
+
+Usage: gsoc2-cli[EXE] send-envelope [OPTIONS] <PATH>
+
+Arguments:
+  <PATH>
+          The path or glob to the file(s) in envelope format to send as envelope(s).
+
+Options:
+      --raw
+          Send envelopes without attempting to parse their contents.
+
+      --header <KEY:VALUE>
+          Custom headers that should be attached to all requests
+          in key:value format.
+
+      --auth-token <AUTH_TOKEN>
+          Use the given Gsoc2 auth token.
+
+      --log-level <LOG_LEVEL>
+          Set the log output verbosity.
+          
+          [possible values: trace, debug, info, warn, error]
+
+      --quiet
+          Do not print any output while preserving correct exit code. This flag is currently
+          implemented only for selected subcommands.
+          
+          [aliases: silent]
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+```

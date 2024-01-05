@@ -1,0 +1,19 @@
+```
+$ gsoc2-cli organizations list --help
+? success
+List all organizations available to the authenticated token.
+
+Usage: gsoc2-cli[EXE] organizations list [OPTIONS]
+
+Options:
+      --header <KEY:VALUE>       Custom headers that should be attached to all requests
+                                 in key:value format.
+      --auth-token <AUTH_TOKEN>  Use the given Gsoc2 auth token.
+      --log-level <LOG_LEVEL>    Set the log output verbosity. [possible values: trace, debug, info,
+                                 warn, error]
+      --quiet                    Do not print any output while preserving correct exit code. This
+                                 flag is currently implemented only for selected subcommands.
+                                 [aliases: silent]
+  -h, --help                     Print help
+
+```

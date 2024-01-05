@@ -1,0 +1,6 @@
+```
+$ gsoc2-cli send-envelope tests/integration/_fixtures/envelope.dat
+? success
+Envelope from file tests/integration/_fixtures/envelope.dat dispatched
+
+```

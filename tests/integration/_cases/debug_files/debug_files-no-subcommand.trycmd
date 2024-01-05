@@ -1,0 +1,27 @@
+```
+$ gsoc2-cli debug-files
+? failed
+Locate, analyze or upload debug information files.
+
+Usage: gsoc2-cli[EXE] debug-files [OPTIONS] <COMMAND>
+
+Commands:
+  bundle-sources  Create a source bundle for a given debug information file
+  check           Check the debug info file at a given path.
+  find            Locate debug information files for given debug identifiers.
+  print-sources   Print source files linked by the given debug info file.
+  upload          Upload debugging information files.
+  help            Print this message or the help of the given subcommand(s)
+
+Options:
+      --header <KEY:VALUE>       Custom headers that should be attached to all requests
+                                 in key:value format.
+      --auth-token <AUTH_TOKEN>  Use the given Gsoc2 auth token.
+      --log-level <LOG_LEVEL>    Set the log output verbosity. [possible values: trace, debug, info,
+                                 warn, error]
+      --quiet                    Do not print any output while preserving correct exit code. This
+                                 flag is currently implemented only for selected subcommands.
+                                 [aliases: silent]
+  -h, --help                     Print help
+
+```

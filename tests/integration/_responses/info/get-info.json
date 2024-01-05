@@ -1,0 +1,14 @@
+{
+  "user": {
+    "username": "kamil@gsoc2.io",
+    "id": "1337",
+    "name": "Kamil Ogórek",
+    "email": "kamil@gsoc2.io"
+  },
+  "auth": {
+    "scopes": [
+      "project:read",
+      "project:releases"
+    ]
+  }
+}

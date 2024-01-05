@@ -1,0 +1,12 @@
+target
+.DS_Store
+.cargo
+node_modules
+coverage
+dist
+dump
+checksums.txt
+yarn-error.log
+
+/gsoc2-cli
+/gsoc2-cli.exe

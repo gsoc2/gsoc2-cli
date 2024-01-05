@@ -1,0 +1,11 @@
+```
+$ gsoc2-cli --auth-token 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 --url http://localhost:8000 sourcemaps upload
+? failed
+error: the following required arguments were not provided:
+  <PATHS>...
+
+Usage: gsoc2-cli[EXE] sourcemaps upload <PATHS>...
+
+For more information, try '--help'.
+
+```
