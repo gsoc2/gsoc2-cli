@@ -97,7 +97,7 @@ pub fn detect_release_name() -> Result<String> {
         }
     }
 
-    // try Heroku #2: https://docs.gsoc2.io/product/integrations/deployment/heroku/#configure-releases
+    // try Heroku #2: https://docs.gsoc2.github.io/product/integrations/deployment/heroku/#configure-releases
     if let Ok(release) = env::var("HEROKU_SLUG_COMMIT") {
         if !release.is_empty() {
             return Ok(release);

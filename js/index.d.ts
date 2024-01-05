@@ -4,7 +4,7 @@
 declare module '@gsoc2/cli' {
   export interface Gsoc2CliOptions {
     /**
-     * The URL of the Gsoc2 instance you are connecting to. Defaults to https://gsoc2.io/.
+     * The URL of the Gsoc2 instance you are connecting to. Defaults to https://gsoc2.github.io/.
      * This value will update `GSOC2_URL env variable.
      */
     url?: string;
@@ -217,7 +217,7 @@ declare module '@gsoc2/cli' {
     /**
      * Creates a new instance of Gsoc2Cli class
      *
-     * @param configFile Path to Gsoc2 CLI config properties, as described in https://docs.gsoc2.io/learn/cli/configuration/#properties-files.
+     * @param configFile Path to Gsoc2 CLI config properties, as described in https://docs.gsoc2.github.io/learn/cli/configuration/#properties-files.
      * By default, the config file is looked for upwards from the current path and defaults from ~/.gsoc2clirc are always loaded.
      * This value will update `GSOC2_PROPERTIES` env variable.
      * @param options {@link Gsoc2CliOptions}

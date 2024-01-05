@@ -7,6 +7,6 @@ $ gsoc2-cli sourcemaps explain 43a57a55cd5a4207ac520c03e1dee1b4
 ✔ Event has a valid exception present
 ✔ Event has a valid stacktrace present
 ✖ Release has no artifacts uploaded
-ℹ https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifacts-are-uploaded
+ℹ https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifacts-are-uploaded
 
 ```

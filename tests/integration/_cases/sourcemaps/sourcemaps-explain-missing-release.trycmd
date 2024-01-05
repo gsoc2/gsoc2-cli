@@ -5,7 +5,7 @@ $ gsoc2-cli sourcemaps explain 43a57a55cd5a4207ac520c03e1dee1b4
 ✔ Fetched data for event: 43a57a55cd5a4207ac520c03e1dee1b4
 ✖ Event is missing a release name
 ℹ Configure 'release' option in the SDK.
-  https://docs.gsoc2.io/platforms/javascript/configuration/options/#release
-  https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-a-release-is-configured-in-your-sdk
+  https://docs.gsoc2.github.io/platforms/javascript/configuration/options/#release
+  https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-a-release-is-configured-in-your-sdk
 
 ```

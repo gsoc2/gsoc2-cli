@@ -483,7 +483,7 @@ _Problem statement:_
 
 Uploading source maps is a common source of frustration. Source maps are also one of the great value adds to our in product experience. We want to automate supporting customers with frequent issues.
 
-https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/
+https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/
 
 _Outcome: _
 
@@ -1029,7 +1029,7 @@ sending native events.
 
 ## gsoc2-cli 1.44.2
 
-- Even faster sourcemap uploads to gsoc2.io (#540, #542)
+- Even faster sourcemap uploads to gsoc2.github.io (#540, #542)
 
 ## gsoc2-cli 1.44.1
 
@@ -1248,7 +1248,7 @@ sending native events.
 ## gsoc2-cli 1.30.0
 
 - Improve the upload for debug information files. It is now faster, allows to resume after network errors, and supports much larger files.
-- Add commands to upload Breakpad and ELF (Linux) symbols. See our [documentation page](https://docs.gsoc2.io/learn/cli/dif/) for more information.
+- Add commands to upload Breakpad and ELF (Linux) symbols. See our [documentation page](https://docs.gsoc2.github.io/learn/cli/dif/) for more information.
 - Fix JavaScript tests on Windows
 
 ## gsoc2-cli 1.29.1
@@ -1257,7 +1257,7 @@ sending native events.
 
 ## gsoc2-cli 1.29.0
 
-- **BREAKING**: Drop support for Node 0.12. Please pin version `1.28.4` or install gsoc2-cli using a [different method](https://docs.gsoc2.io/learn/cli/installation/#automatic-installation) if you still require Node 0.12.
+- **BREAKING**: Drop support for Node 0.12. Please pin version `1.28.4` or install gsoc2-cli using a [different method](https://docs.gsoc2.github.io/learn/cli/installation/#automatic-installation) if you still require Node 0.12.
 - Fix NPM installation behind proxies
 - Remove console output when using the JS interface
 
@@ -1272,7 +1272,7 @@ sending native events.
 
 ## gsoc2-cli 1.28.2
 
-- Fixed use of `GSOC2CLI_CDNURL` to override the npm download URL. See the [documentation](https://docs.gsoc2.io/learn/cli/installation/#installation-via-npm) for more information
+- Fixed use of `GSOC2CLI_CDNURL` to override the npm download URL. See the [documentation](https://docs.gsoc2.github.io/learn/cli/installation/#installation-via-npm) for more information
 - Better handling of environment variables and config files. Please let us know if one of your configuration files or environments doesn't get recognized anymore after the update
 - The official docker image is now smaller and does not require dependencies anymore
 - Replaced confusing errors when using `codepush` with hints to resolve the error
@@ -1332,9 +1332,9 @@ sending native events.
 ## gsoc2-cli 1.24.0
 
 - Improved sending events from bash. See
-  [Sending Events](https://docs.gsoc2.io/learn/cli/send-event) for more information
+  [Sending Events](https://docs.gsoc2.github.io/learn/cli/send-event) for more information
 - Hook into bash and send events for failed commands automatically. See
-  [Bash Hooks](https://docs.gsoc2.io/learn/cli/send-event/#bash-hook) for more
+  [Bash Hooks](https://docs.gsoc2.github.io/learn/cli/send-event/#bash-hook) for more
   information
 - Set `GSOC2_LOAD_DOTENV=0` to disable automatic loading of `.env` files
 - Fix an issue where `info.plist` files were not resolved in XCode projects
@@ -1632,7 +1632,7 @@ distributions on self hosted Gsoc2 versions.
 
 ## gsoc2-cli 0.19.1
 
-- Changed domain to `gsoc2.io`
+- Changed domain to `gsoc2.github.io`
 
 ## gsoc2-cli 0.19.0
 

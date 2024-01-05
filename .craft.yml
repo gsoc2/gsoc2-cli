@@ -49,23 +49,23 @@ targets:
         version "{{version}}"
         license "BSD-3-Clause"
         if OS.mac?
-          url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Darwin-universal"
+          url "https://gsoc2.github.io/gsoc2-cli/{{version}}/gsoc2-cli-Darwin-universal"
           sha256 "{{checksums.gsoc2-cli-Darwin-universal}}"
         elsif OS.linux?
           if Hardware::CPU.arm?
             if Hardware::CPU.is_64_bit?
-              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-aarch64"
+              url "https://gsoc2.github.io/gsoc2-cli/{{version}}/gsoc2-cli-Linux-aarch64"
               sha256 "{{checksums.gsoc2-cli-Linux-aarch64}}"
             else
-              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-armv7"
+              url "https://gsoc2.github.io/gsoc2-cli/{{version}}/gsoc2-cli-Linux-armv7"
               sha256 "{{checksums.gsoc2-cli-Linux-armv7}}"
             end
           elseif Hardware::CPU.intel?
             if Hardware::CPU.is_64_bit?
-              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-x86_64"
+              url "https://gsoc2.github.io/gsoc2-cli/{{version}}/gsoc2-cli-Linux-x86_64"
               sha256 "{{checksums.gsoc2-cli-Linux-x86_64}}"
             else
-              url "https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/gsoc2-cli-Linux-i686"
+              url "https://gsoc2.github.io/gsoc2-cli/{{version}}/gsoc2-cli-Linux-i686"
               sha256 "{{checksums.gsoc2-cli-Linux-i686}}"
             end
           else
@@ -86,7 +86,7 @@ targets:
   - name: registry
     apps:
       app:gsoc2-cli:
-        urlTemplate: https://downloads.gsoc2-cdn.com/gsoc2-cli/{{version}}/{{file}}
+        urlTemplate: https://gsoc2.github.io/gsoc2-cli/{{version}}/{{file}}
         includeNames: /^gsoc2-cli-(Darwin|Windows|Linux).*$/i
         checksums:
           - algorithm: sha256

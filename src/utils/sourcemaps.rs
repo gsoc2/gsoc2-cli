@@ -9,9 +9,9 @@ use std::str::FromStr;
 
 use anyhow::{anyhow, bail, Context, Error, Result};
 use console::style;
+use gsoc2::types::DebugId;
 use indicatif::ProgressStyle;
 use log::{debug, info, warn};
-use gsoc2::types::DebugId;
 use sha1_smol::Digest;
 use sourcemap::SourceMap;
 use symbolic::debuginfo::js::{

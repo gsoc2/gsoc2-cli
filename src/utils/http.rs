@@ -70,7 +70,7 @@ pub fn is_absolute_url(url: &str) -> bool {
 
 #[test]
 fn test_parse_link_header() {
-    let rv = parse_link_header("<https://gsoc2.io/api/0/organizations/gsoc2/releases/?&cursor=100:-1:1>; rel=\"previous\"; results=\"false\"; cursor=\"100:-1:1\", <https://gsoc2.io/api/0/organizations/gsoc2/releases/?&cursor=100:1:0>; rel=\"next\"; results=\"true\"; cursor=\"100:1:0\"");
+    let rv = parse_link_header("<https://gsoc2.github.io/api/0/organizations/gsoc2/releases/?&cursor=100:-1:1>; rel=\"previous\"; results=\"false\"; cursor=\"100:-1:1\", <https://gsoc2.github.io/api/0/organizations/gsoc2/releases/?&cursor=100:1:0>; rel=\"next\"; results=\"true\"; cursor=\"100:1:0\"");
     assert_eq!(rv.len(), 2);
 
     let a = &rv[0];
@@ -78,7 +78,7 @@ fn test_parse_link_header() {
 
     assert_eq!(
         a.get("_link").unwrap(),
-        &"https://gsoc2.io/api/0/organizations/gsoc2/releases/?&cursor=100:-1:1"
+        &"https://gsoc2.github.io/api/0/organizations/gsoc2/releases/?&cursor=100:-1:1"
     );
     assert_eq!(a.get("cursor").unwrap(), &"100:-1:1");
     assert_eq!(a.get("rel").unwrap(), &"previous");
@@ -86,7 +86,7 @@ fn test_parse_link_header() {
 
     assert_eq!(
         b.get("_link").unwrap(),
-        &"https://gsoc2.io/api/0/organizations/gsoc2/releases/?&cursor=100:1:0"
+        &"https://gsoc2.github.io/api/0/organizations/gsoc2/releases/?&cursor=100:1:0"
     );
     assert_eq!(b.get("cursor").unwrap(), &"100:1:0");
     assert_eq!(b.get("rel").unwrap(), &"next");
@@ -95,12 +95,12 @@ fn test_parse_link_header() {
 
 #[test]
 fn test_is_absolute_url() {
-    assert!(is_absolute_url("https://gsoc2.io"));
-    assert!(is_absolute_url("http://gsoc2.io"));
-    assert!(is_absolute_url("https://gsoc2.io/path"));
-    assert!(is_absolute_url("http://gsoc2.io/path"));
-    assert!(is_absolute_url("http://gsoc2.io/path?query=foo"));
-    assert!(is_absolute_url("https://gsoc2.io/path?query=foo"));
+    assert!(is_absolute_url("https://gsoc2.github.io"));
+    assert!(is_absolute_url("http://gsoc2.github.io"));
+    assert!(is_absolute_url("https://gsoc2.github.io/path"));
+    assert!(is_absolute_url("http://gsoc2.github.io/path"));
+    assert!(is_absolute_url("http://gsoc2.github.io/path?query=foo"));
+    assert!(is_absolute_url("https://gsoc2.github.io/path?query=foo"));
 
     assert!(!is_absolute_url("/path"));
     assert!(!is_absolute_url("/path?query=foo"));

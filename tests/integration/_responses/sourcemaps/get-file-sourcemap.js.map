@@ -11,7 +11,7 @@
     "// The require scope\nvar __webpack_require__ = {};\n\n",
     "__webpack_require__.g = (function() {\n\tif (typeof globalThis === 'object') return globalThis;\n\ttry {\n\t\treturn this || new Function('return this')();\n\t} catch (e) {\n\t\tif (typeof window === 'object') return window;\n\t}\n})();",
     "const _global = (typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {}); _global.GSOC2_RELEASE={id:\"ytho-test\"};",
-    "Gsoc2.init({\n  dsn: 'https://5b0e5845265a472ba9c269bbfa0c8388@o333688.ingest.gsoc2.io/5334254',\n  release: 'ytho-test'\n})\n\nfunction foo(msg) {\n  bar(msg);\n}\n\nfunction bar(msg) {\n  throw new Error(msg);\n}\n\nfoo(\"whoops\");\n"
+    "Gsoc2.init({\n  dsn: 'https://5b0e5845265a472ba9c269bbfa0c8388@o333688.ingest.gsoc2.github.io/5334254',\n  release: 'ytho-test'\n})\n\nfunction foo(msg) {\n  bar(msg);\n}\n\nfunction bar(msg) {\n  throw new Error(msg);\n}\n\nfoo(\"whoops\");\n"
   ],
   "names": [
     "__webpack_require__",

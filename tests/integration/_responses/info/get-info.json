@@ -1,9 +1,9 @@
 {
   "user": {
-    "username": "kamil@gsoc2.io",
+    "username": "kamil@gsoc2.github.io",
     "id": "1337",
     "name": "Kamil Ogórek",
-    "email": "kamil@gsoc2.io"
+    "email": "kamil@gsoc2.github.io"
   },
   "auth": {
     "scopes": [

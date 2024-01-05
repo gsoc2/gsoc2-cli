@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://gsoc2.io/?utm_source=github&utm_medium=logo" target="_blank">
+  <a href="https://gsoc2.github.io/?utm_source=github&utm_medium=logo" target="_blank">
     <picture>
       <source srcset="https://gsoc2-brand.storage.googleapis.com/gsoc2-logo-white.png" media="(prefers-color-scheme: dark)" />
       <source srcset="https://gsoc2-brand.storage.googleapis.com/gsoc2-logo-black.png" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
@@ -21,18 +21,18 @@ Fastlane tools.
 
 * Downloads can be found under
   [Releases](https://github.com/gsoc2/gsoc2-cli/releases/)
-* Documentation can be found [here](https://docs.gsoc2.io/hosted/learn/cli/)
+* Documentation can be found [here](https://docs.gsoc2.github.io/hosted/learn/cli/)
 
 ## Installation
 
 If you are on OS X or Linux, you can use the automated downloader which will fetch the latest release version for you and install it:
 
-    curl -sL https://gsoc2.io/get-cli/ | bash
+    curl -sL https://gsoc2.github.io/get-cli/ | bash
 
 We do, however, encourage you to pin the specific version of the CLI, so your builds are always reproducible.
 To do that, you can use the exact same method, with an additional version specifier:
 
-    curl -sL https://gsoc2.io/get-cli/ | GSOC2_CLI_VERSION=2.0.4 bash
+    curl -sL https://gsoc2.github.io/get-cli/ | GSOC2_CLI_VERSION=2.0.4 bash
 
 This will automatically download the correct version of `gsoc2-cli` for your operating system and install it. If necessary, it will prompt for your admin password for `sudo`. For a different installation location or for systems without `sudo` (like Windows), you can `export INSTALL_DIR=/custom/installation/path` before running this command.
 
