@@ -5,11 +5,11 @@ use std::time::Duration;
 
 use anyhow::{Context, Result};
 use chrono::Utc;
-use lazy_static::lazy_static;
-use regex::Regex;
 use gsoc2::protocol::{Breadcrumb, ClientSdkInfo, Event};
 use gsoc2::types::Dsn;
 use gsoc2::{apply_defaults, Client, ClientOptions};
+use lazy_static::lazy_static;
+use regex::Regex;
 
 use crate::constants::USER_AGENT;
 

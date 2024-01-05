@@ -32,7 +32,7 @@ Commands:
 
 Options:
       --url <URL>                Fully qualified URL to the Gsoc2 server.
-                                 [default: https://gsoc2.io/]
+                                 [default: https://gsoc2.github.io/]
       --header <KEY:VALUE>       Custom headers that should be attached to all requests
                                  in key:value format.
       --auth-token <AUTH_TOKEN>  Use the given Gsoc2 auth token.

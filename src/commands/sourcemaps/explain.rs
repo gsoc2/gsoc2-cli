@@ -124,7 +124,7 @@ fn fetch_release_artifacts(org: &str, project: &str, release: &str) -> Result<Ve
     Api::current().list_release_files(org, Some(project), release).map(|artifacts| {
         if artifacts.is_empty() {
             error("Release has no artifacts uploaded");
-            tip("https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifacts-are-uploaded");
+            tip("https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifacts-are-uploaded");
             return Err(QuietExit(1).into());
         }
         Ok(artifacts)
@@ -165,7 +165,7 @@ fn verify_dists_matches(artifact: &Artifact, dist: Option<&str>) -> Result<()> {
             artifact.dist.as_ref().unwrap_or(&String::from("[none]"))
         ));
         tip("Configure 'dist' option in the SDK to match the one used during artifacts upload.\n  \
-            https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifact-distribution-value-matches-value-configured-in-your-sdk");
+            https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifact-distribution-value-matches-value-configured-in-your-sdk");
 
         return Err(QuietExit(1).into());
     }
@@ -326,8 +326,8 @@ fn extract_release(event: &ProcessedEvent) -> Result<String> {
     } else {
         error("Event is missing a release name");
         tip("Configure 'release' option in the SDK.\n  \
-            https://docs.gsoc2.io/platforms/javascript/configuration/options/#release\n  \
-            https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-a-release-is-configured-in-your-sdk");
+            https://docs.gsoc2.github.io/platforms/javascript/configuration/options/#release\n  \
+            https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-a-release-is-configured-in-your-sdk");
         Err(QuietExit(1).into())
     }
 }

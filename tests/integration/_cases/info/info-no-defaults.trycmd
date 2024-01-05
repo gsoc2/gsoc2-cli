@@ -5,7 +5,7 @@ Gsoc2 Server: [SERVER]
 
 Authentication Info:
   Method: Auth Token
-  User: kamil@gsoc2.io
+  User: kamil@gsoc2.github.io
   Scopes:
     - project:read
     - project:releases

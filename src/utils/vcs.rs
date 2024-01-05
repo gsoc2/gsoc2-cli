@@ -692,9 +692,7 @@ fn test_url_parsing() {
         }
     );
     assert_eq!(
-        VcsUrl::parse(
-            "https://bitbucket.example.com/projects/lauryngsoc2/repos/helloworld/browse"
-        ),
+        VcsUrl::parse("https://bitbucket.example.com/projects/lauryngsoc2/repos/helloworld/browse"),
         VcsUrl {
             provider: "bitbucket.example.com".into(),
             id: "lauryngsoc2/helloworld".into(),

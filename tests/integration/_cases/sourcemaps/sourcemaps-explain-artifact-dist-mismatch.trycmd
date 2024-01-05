@@ -9,6 +9,6 @@ $ gsoc2-cli sourcemaps explain 43a57a55cd5a4207ac520c03e1dee1b4
 ✔ Artifact ~/dist/bundle.min.js found.
 ✖ Release artifact distribution mismatch. Event: bar, Artifact: foo
 ℹ Configure 'dist' option in the SDK to match the one used during artifacts upload.
-  https://docs.gsoc2.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifact-distribution-value-matches-value-configured-in-your-sdk
+  https://docs.gsoc2.github.io/platforms/javascript/sourcemaps/troubleshooting_js/#verify-artifact-distribution-value-matches-value-configured-in-your-sdk
 
 ```

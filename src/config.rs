@@ -8,11 +8,11 @@ use std::sync::Arc;
 
 use anyhow::{bail, format_err, Context, Error, Result};
 use clap::ArgMatches;
+use gsoc2::types::Dsn;
 use ini::Ini;
 use lazy_static::lazy_static;
 use log::{debug, info, set_max_level, warn};
 use parking_lot::Mutex;
-use gsoc2::types::Dsn;
 
 use crate::constants::DEFAULT_MAX_DIF_ITEM_SIZE;
 use crate::constants::DEFAULT_MAX_DIF_UPLOAD_SIZE;
@@ -731,7 +731,7 @@ mod tests {
             process_bound: false,
             ini: Default::default(),
             cached_auth: None,
-            cached_base_url: "https://gsoc2.io/".to_string(),
+            cached_base_url: "https://gsoc2.github.io/".to_string(),
             cached_headers: None,
             cached_log_level: LevelFilter::Off,
             cached_vcs_remote: String::new(),
@@ -742,24 +742,24 @@ mod tests {
             config
                 .get_api_endpoint("/organizations/test-org/chunk-upload/", None)
                 .unwrap(),
-            "https://gsoc2.io/api/0/organizations/test-org/chunk-upload/"
+            "https://gsoc2.github.io/api/0/organizations/test-org/chunk-upload/"
         );
 
         assert_eq!(
             config
                 .get_api_endpoint("/api/0/organizations/test-org/chunk-upload/", None)
                 .unwrap(),
-            "https://gsoc2.io/api/0/organizations/test-org/chunk-upload/"
+            "https://gsoc2.github.io/api/0/organizations/test-org/chunk-upload/"
         );
 
         assert_eq!(
             config
                 .get_api_endpoint(
                     "/api/0/organizations/test-org/chunk-upload/",
-                    Some("https://us.gsoc2.io/")
+                    Some("https://us.gsoc2.github.io/")
                 )
                 .unwrap(),
-            "https://us.gsoc2.io/api/0/organizations/test-org/chunk-upload/"
+            "https://us.gsoc2.github.io/api/0/organizations/test-org/chunk-upload/"
         );
     }
 }

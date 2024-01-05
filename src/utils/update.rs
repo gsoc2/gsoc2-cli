@@ -240,10 +240,7 @@ fn update_nagger_impl() -> Result<()> {
         if is_homebrew_install() {
             eprintln!("{}", style("run brew upgrade gsoc2-cli to update").dim());
         } else if is_npm_install() {
-            eprintln!(
-                "{}",
-                style("Please use npm/yarn to update gsoc2-cli").dim()
-            )
+            eprintln!("{}", style("Please use npm/yarn to update gsoc2-cli").dim())
         } else {
             eprintln!("{}", style("run gsoc2-cli update to update").dim());
         }

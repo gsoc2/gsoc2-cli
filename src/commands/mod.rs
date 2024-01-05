@@ -145,7 +145,7 @@ fn app() -> Command {
         .arg_required_else_help(true)
         .arg(Arg::new("url").value_name("URL").long("url").help(
             "Fully qualified URL to the Gsoc2 server.{n}\
-             [default: https://gsoc2.io/]",
+             [default: https://gsoc2.github.io/]",
         ))
         .arg(
             Arg::new("headers")

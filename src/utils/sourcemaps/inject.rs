@@ -10,8 +10,8 @@ use std::path::PathBuf;
 use anyhow::Result;
 use lazy_static::lazy_static;
 
-use magic_string::{GenerateDecodedMapOptions, MagicString};
 use gsoc2::types::DebugId;
+use magic_string::{GenerateDecodedMapOptions, MagicString};
 use sourcemap::SourceMap;
 
 const CODE_SNIPPET_TEMPLATE: &str = r#"!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._gsoc2DebugIds=e._gsoc2DebugIds||{},e._gsoc2DebugIds[n]="__GSOC2_DEBUG_ID__")}catch(e){}}();"#;

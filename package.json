@@ -1,9 +1,9 @@
 {
   "name": "@gsoc2/cli",
   "version": "2.23.2",
-  "description": "A command line utility to work with Gsoc2. https://docs.gsoc2.io/hosted/learn/cli/",
+  "description": "A command line utility to work with Gsoc2. https://docs.gsoc2.github.io/hosted/learn/cli/",
   "repository": "git://github.com/gsoc2/gsoc2-cli.git",
-  "homepage": "https://docs.gsoc2.io/hosted/learn/cli/",
+  "homepage": "https://docs.gsoc2.github.io/hosted/learn/cli/",
   "author": "Gsoc2",
   "license": "BSD-3-Clause",
   "engines": {

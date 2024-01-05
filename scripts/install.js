@@ -26,7 +26,7 @@ const CDN_URL =
   process.env.GSOC2CLI_LOCAL_CDNURL ||
   process.env.npm_config_gsoc2cli_cdnurl ||
   process.env.GSOC2CLI_CDNURL ||
-  'https://downloads.gsoc2-cdn.com/gsoc2-cli';
+  'https://gsoc2.github.io/gsoc2-cli';
 
 function getLogStream(defaultStream) {
   const logStream = process.env.GSOC2CLI_LOG_STREAM || defaultStream;

@@ -6,7 +6,7 @@ use std::time::Duration;
 pub const APP_NAME: &str = "gsoc2cli";
 
 /// The default API URL
-pub const DEFAULT_URL: &str = "https://gsoc2.io/";
+pub const DEFAULT_URL: &str = "https://gsoc2.github.io/";
 
 /// The version of the library
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
@@ -16,7 +16,7 @@ pub const CONFIG_RC_FILE_NAME: &str = ".gsoc2clirc";
 
 /// The release registry URL where the latest released version of gsoc2-cli can be found
 pub const RELEASE_REGISTRY_LATEST_URL: &str =
-    "https://release-registry.services.gsoc2.io/apps/gsoc2-cli/latest";
+    "https://release-registry.services.gsoc2.github.io/apps/gsoc2-cli/latest";
 
 /// The file extension of the binary (.exe or empty string)
 #[cfg(windows)]
