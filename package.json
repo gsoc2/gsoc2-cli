@@ -15,7 +15,7 @@
     "gsoc2-cli": "bin/gsoc2-cli"
   },
   "dependencies": {
-    "https-proxy-agent": "^5.0.0",
+    "https-proxy-agent": "^7.0.3",
     "node-fetch": "^2.6.7",
     "progress": "^2.0.3",
     "proxy-from-env": "^1.1.0",
